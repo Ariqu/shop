@@ -1,0 +1,22 @@
+Opis folderów:
+
+- components:
+    - zawiera komponenty potrzebne do budowania strony w tym strony głównej i podstron, można modyfikować zgodnie z potrzebami.
+- administration:
+    - zawiera strony i komponenty potrzebnde do zarządzania stroną i produktami na stronie internetowej. Można modyfikować.
+- account_components:
+    - w tym folderze znajdują sie komponenty do budowania sekcji middle na podstronach, można modyfikować.
+- scripts:
+    - zawiera skrypty javascript służacę do lepszej presonalizacji strony internetowej.
+- informacje:
+    - w tym folderze znajdują sie podstrony, oraz sekcje. Podstrony które się znajdują w tym folderze służą do informacji o stronie.
+- search:
+    - wyszukiwarka produktów.
+- platnosci:
+    - system płatności na stronie internetowej.
+- zdjecia:
+    - Folder ten zawiera zdjęcia produktów które są widoczne na stronie.
+- backup_db:
+    - Folder zawiera kopie zapasową bazy danych.
+
+//

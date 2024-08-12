@@ -1,0 +1,249 @@
+
+        @font-face {
+            font-family: 'myfont';
+            src: url('../font.woff2');
+        }
+        :root {
+            --marquee-width: 100%;
+            --marquee-height: 20vh;
+            /* --marquee-elements: 12; */ /* defined with JavaScript */
+            --marquee-elements-displayed: 5;
+            --marquee-element-width: calc(var(--marquee-width) / var(--marquee-elements-displayed));
+            --marquee-animation-duration: calc(var(--marquee-elements) * 3s);
+          }
+        body {
+            box-sizing: border-box;
+        }
+        * {
+            font-family: myfont;
+        }
+        .navbar-transparent {
+            background-color: white;
+            backdrop-filter: blur(5px);
+            color: black;
+            font-size: 13px;
+            z-index: 2;
+        }
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            padding: 40px;
+            margin: 10px;
+        }
+        .image-container img {
+            transition: transform 0.3s ease;
+            width: calc(100% + 20px); /* Lekko powiększone */
+            height: 100%;
+            object-fit: cover;
+        }
+        .image-container-left:hover img {
+            transform: scale(1.1) translateX(40px);
+            background-color: red;
+        }
+        .image-container-right:hover img {
+            transform: scale(1.1) translateX(-40px);
+        }
+
+        @font-face {
+            font-family: 'myfont';
+            src: url('font.woff2');
+        }
+        * {
+            font-family: myfont;
+        }
+        .navbar-transparent {
+            background-color: white;
+            backdrop-filter: blur(5px);
+            color: black;
+            font-size: 13px;
+            z-index: 2;
+        }
+        .image-container {
+            position: relative;
+            overflow: hidden;
+            padding: 40px;
+            margin: 10px;
+        }
+        .image-container img {
+            transition: transform 0.3s ease;
+            width: calc(100% + 20px); /* Lekko powiększone */
+            height: 100%;
+            object-fit: cover;
+        }
+        .image-container-left:hover img {
+            transform: scale(1.1) translateX(40px);
+            background-color: red;
+        }
+        .image-container-right:hover img {
+            transform: scale(1.1) translateX(-40px);
+        }
+        #suggestions {
+            max-height: 150px; /* Maksymalna wysokość kontenera z sugestiami */
+            overflow-y: auto;  /* Dodaj pasek przewijania w razie potrzeby */
+            width: calc(100% - 2rem); /* Szerokość dostosowana do inputa */
+            border-radius: 0.375rem;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            background-color: white;
+            border: 1px solid #d1d5db;
+            position: absolute;
+            top: 100%;
+            left: 0;
+            z-index: 1000;
+            transition: opacity 0.2s ease, visibility 0.2s ease;
+        }
+
+            #suggestions.hidden {
+                display: none;
+            }
+
+            .suggestion-item {
+                padding: 0.5rem;
+                cursor: pointer;
+            }
+
+            .suggestion-item:hover {
+                background-color: #f3f4f6;
+            }
+            @font-face {
+            font-family: 'myfont';
+            src: url('font.woff2');
+        }
+        .promocja {
+            color: red;
+            font-weight: bold;
+        }
+        .przekreslone {
+            text-decoration: line-through;
+        }
+        .relative {
+            position: relative;
+        }
+        
+        .absolute {
+            position: absolute;
+        }
+        
+        .w-full {
+            width: 100%;
+        }
+        
+        .h-screen {
+            height: 100vh;
+        }
+        
+        .overflow-hidden {
+            overflow: hidden;
+        }
+        
+        .object-cover {
+            object-fit: cover;
+        }
+        
+        .top-0 {
+            top: 0;
+        }
+        
+        .left-0 {
+            left: 0;
+        }
+        
+        .top-1\/2 {
+            top: 50%;
+        }
+        
+        .left-1\/2 {
+            left: 50%;
+        }
+        
+        .transform {
+            transform: translate(-50%, -50%);
+        }
+        
+        .w-100 {
+            width: 100%;
+        }
+        
+        .h-100 {
+            height: 100%;
+        }
+        
+        .w-50 {
+            width: 50px; /* Adjust as needed */
+        }
+        
+        .h-50 {
+            height: 50px; /* Adjust as needed */
+        }
+        
+        .flex {
+            display: flex;
+        }
+        
+        .items-center {
+            align-items: center;
+        }
+        
+        .justify-center {
+            justify-content: center;
+        }
+
+        .diagonal-overlay::before,
+        .diagonal-overlay::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none; /* Allows clicking through the overlay */
+        }
+
+        .diagonal-overlay::before {
+            background-color: rgba(0, 0, 0, 1);
+            z-index: 0;
+        }
+
+        .diagonal-overlay::after {
+            background: linear-gradient(to bottom right, rgba(15, 0, 224, 0.8) 50%, transparent 50%);
+            z-index: 1;
+        }
+
+        .diagonal-overlay video {
+            filter: brightness(30%);
+            z-index: 1; /* Make sure video is above the black background */
+        }
+
+        .logo-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            z-index: 2; /* Ensures the logo is above the overlay */
+        }
+        .nav-link {
+            position: relative;
+        }
+    
+        .group:hover .group-hover\:block {
+            display: block;
+        }
+    
+        .group:hover .group-hover\:text-blue-500 {
+            color: #3b82f6; /* Tailwind CSS color for blue-500 */
+        }
+    
+        #koszyk {
+            display: none;
+        }
+    
+        .group:hover #koszyk {
+            display: block;
+        }
+        #koszyk {
+            background-color: rgb(4, 0, 255) !important;
+        }
+        .produkt {
+            background-color: black;
+            color: white;
+            margin: 10px;
+        }
