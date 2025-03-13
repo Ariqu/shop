@@ -1,0 +1,43 @@
+      /* Kontener dla całej strony */
+      .container {
+        display: flex;
+        height: 100vh;
+        margin: 0; /* Dodaj margines 0, aby uniknąć dodatkowych odstępów */
+      }
+
+      /* Lewe tło z napisem */
+      .left-side {
+        width: 100%; /* Szerokość lewej strony ustawiona na 50% */
+        background-color: black;
+        color: white;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        color: white;
+      }
+
+      /* Prawe tło z formularzem */
+      .right-side {
+        width: 50%; /* Szerokość prawej strony ustawiona na 50% */
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #f9f9f9;
+      }
+
+      /* Formularz */
+      .form-container {
+        background-color: white;
+        padding: 2rem;
+        border-radius: 0.5rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        width: 100%;
+        max-width: 500px;
+      }
+
+      /* Styl dla komunikatu o błędzie */
+      .error-message {
+        color: red;
+        margin-top: 1rem;
+      }
